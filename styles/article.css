@@ -1,0 +1,20 @@
+article {
+  padding: 0.5in 0;
+
+	display: grid;
+  /* make 7.5in smaller */
+	grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+
+  background:linear-gradient(hsl(55,100%,96%) ,white 6.55rem);
+
+}
+	/* when you changed the coding below " grid-tem.." you should change the grid-colum:2/3 because it no longer have the meaning*/
+	/* OhmyGosh, coding should be really really really careful. I was typle comment but I left "" all things mess up */
+article * { grid-column: start/ end; }
+
+/* this is for mobile phone */
+@media (max-width:8.5in){
+	article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;}
+}
+
+/* you don't need tage <style></style> in CSS coding because it's not Html file*/
